@@ -1,0 +1,154 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+#main_menu{
+    width: 100%;
+    clear: both;
+    
+
+}
+.inner_menu{
+    background: url(image/background.png);
+    background-repeat: repeat-y;
+    min-height: 30px;
+    padding: 10px 0;
+    text-decoration: none;
+    background-size: 2000px 10px;
+    position: relative;
+
+}
+.inner_menu::after{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    content: "";
+}
+#main_menu ul{
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    
+}
+#main_menu ul li{
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 16px;
+    position: relative;
+
+
+}
+
+
+/*--------------------
+MAIN MENU css
+--------*/
+#main_menu{
+    width: 100%;
+    clear: both;
+}
+
+.inner_menu{
+    background: #333333;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+
+}
+.inner_menu::after{
+    background: rgb(22, 21, 21);
+    border-radius: 6px;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    bottom: 0%;
+    content: "";
+
+}
+
+#main_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#main_menu ul li{
+    display: inline-block;
+    padding: 10px;
+    margin: 0 5px;
+    position: relative;
+    
+}
+#main_menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+#main_menu ul li a:hover{
+    color: red;
+    transition: 0.3s;
+}
+#main_menu ul li:hover a{
+    color: #4DA6E9;
+}
+#main_menu ul li:hover ul li a{
+    color: rgb(226, 226, 236);
+}
+
+
+/*--------------------
+DROPDOWN STYLE
+--------*/
+#main_menu ul ul{
+    position: absolute;
+    background: #d14747;
+    width: 180px;
+    left: -9999999px;
+    right: 0;
+    top: 33px;
+}
+#main_menu ul li:hover ul{
+    left: 0px;
+}
+#main_menu ul li:hover ul ul{
+    left: -9999999px;
+}
+#main_menu ul ul ul{
+    left: -99999999999px;
+    top: 1px;
+}
+#main_menu ul li ul li:hover ul{
+    left: 181px;
+}
+#main_menu ul ul li{
+    margin: 0px;
+    display: block;
+}
+/*#main_menu ul ul li a:hover{
+    
+}*/
+#main_menu ul ul li:hover ul li a{
+    background: none;
+    color: white;
+}
+#main_menu ul ul li ul li a:hover{
+    background: rgb(37, 36, 36);
+    color: white;
+}  
+#main_menu ul ul li:hover a{
+    background: rgb(20, 20, 20);
+    color: white;
+}
+

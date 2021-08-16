@@ -1,0 +1,51 @@
+/*TABLET LAYOUT*/
+
+@media only screen and (min-width: 200px) and (max-width: 991px){
+    .social_area {   max-width: 450px;   }
+    .inner_menu {  background: none;
+                    min-height: auto;  }
+    .inner_menu::after {display: none;}
+    .mean-container .mean-bar {
+        margin-top: 0;
+        width:100%;  }
+    #slider_area {margin-top: 0; }
+    .inner_hero h2 {font-size: 55px;}
+
+}
+@media only screen and (min-width: 200px) and (max-width: 480px){
+    
+.mini_meni {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.mini_meni ul, .social_area ul {
+    text-align: center;
+}
+.search_bar {
+    width: 250px;
+    float: none;
+    margin: 0 80px;
+}
+.logo_area{width: 250px;float: none;margin: 0 85px; }
+.social_area ul li { margin-left: 0 5px;}
+.inner_hero h2 {font-size: 25PX;}
+.inner_hero{padding-bottom: 20px;}
+#work_area {padding: 20px;}
+.child_work,#footer_area{
+    width: 98%;
+}
+.child_footer {
+    width: 96%;
+}
+.right_copyright {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.left_copyright {
+    width: 100%;
+    text-align: left;
+}
+.aligenleft {
+    width: 100%;
+
+}

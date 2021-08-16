@@ -1,0 +1,14 @@
+@media only screen and (min-width:200px) and (max-width:991px){
+
+    body{
+        
+    }
+    .inner_menu{
+        background: none;
+    }
+    .inner_menu::after{
+        display: none;
+    }
+    
+    
+}
